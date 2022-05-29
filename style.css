@@ -43,7 +43,7 @@ nav .header {
     font-size: x-large;
 }
 
-nav .settings {
+nav #opensettings {
     margin-left: auto;
 }
 
@@ -169,7 +169,7 @@ main {
 
 #settings {
     z-index: 2;
-    position: fixed;
+    position: absolute;
     left: 50%;
     top: 50%; 
     width: 20rem;
@@ -200,4 +200,8 @@ main {
     font-size: large;
     border-radius: .25rem;
     padding: 0.5rem 0.75rem;
+}
+
+.hide {
+    display: none;
 }
