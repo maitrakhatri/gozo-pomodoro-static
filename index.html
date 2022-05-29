@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>gozo pomodoro</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <nav>
+        <div class="header"> <h1> gozo Pomodoro </h1></div>
+        <div class="settings"><h3>Settings</h3></div>
+    </nav>
+
+    <span id="greeting"><h1>Welcome back Maitra !!</h1> You have 2 tasks to do</span>
+
+    <main>
+        <div class="timer-container">
+            <div class="modes">
+                <span>Focus</span>
+                <span>Short Break</span>
+                <span id="active">Long Break</span>
+            </div>
+            <div class="timer">
+                <span>20:00</span>
+            </div>
+            <div class="actions">
+                <button id="primary">Start</button>
+                <button id="secondary">Reset</button>
+            </div>
+        </div>
+
+        <div class="task-container">
+            <div class="new-task">
+                <input type="text" id="add-new-task" placeholder="add new task" /> <button>Add</button>
+            </div>
+            <div class="task-list">
+                <ol>
+                    <span class="task">
+                        <li class="done">Design this</li><input type="checkbox"> <img src="assets/edit-64.png" alt="edit">
+                    </span>
+
+                    <span class="task">
+                        <li>Complete this</li><input type="checkbox"> <img src="assets/edit-64.png" alt="edit">
+                    </span>
+
+                    <span class="task">
+                        <li>Deploy this</li><input type="checkbox"> <img src="assets/edit-64.png" alt="edit">
+                    </span>
+                </ol>
+            </div>
+        </div>
+    </main>
+
+    <section id="settings">
+
+        <h1>Settings</h1>
+
+        <label for="name">Name</label>
+        <input type="text" placeholder="Enter your name" />
+
+        <label for="focus">Focus Time</label>
+        <input type="number" name="focus" id="focus" />
+
+        <label for="short-break">Short Break Time</label>
+        <input type="number" name="short-break" id="short-break" />
+
+        <label for="long-break">Long Break Time</label>
+        <input type="number" name="long-break" id="long-break" />
+
+        <button type="submit">Save</button>
+
+    </section>
+    
+</body>
+</html>
